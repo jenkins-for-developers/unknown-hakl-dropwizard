@@ -16,7 +16,7 @@ pipeline {
       }
     }
 
-    stage ('Verify version') {
+    stage ('Verify versions') {
       steps {
         sh """java -jar target/demoapp.jar --version"""
       }
